@@ -2,6 +2,10 @@ import random
 from hangman_art import *
 from hangman_words import word_list
 
+#to clear the stick man figur every itration 
+import os
+clear = lambda: os.system('cls')
+
 print(logo)
 print("Welcom player")
 
@@ -19,6 +23,7 @@ game_over = False
 
 while not game_over:
     guess = input("guess the letter: ")
+    clear()
     if guess in display:
         print("You've already gussed this letter!")
 
@@ -40,5 +45,3 @@ while not game_over:
         print("You've won")
 
     print(stages[life])
-   
-    
