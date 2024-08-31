@@ -1,0 +1,1 @@
+## This repo contains some projects for begginers in python
